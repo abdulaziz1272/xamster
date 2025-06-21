@@ -336,5 +336,69 @@ form button:active{
 
 
 /* wallet.html */
+.wallet-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #141c1f, #1a202e, #3e4aa7);
+    position: relative;
 
+}
+.wallet-header{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 0 10px;
+}
+.wallet-header a{
+    color: white;
+}
+.wallet-back-btn{
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+.coinDisplayer{
+    user-select: text;
+}
+.wallet-back-btn:hover{
+    background: #222f3f;
+}
+.wallet-back-btn:active{
+    transform: scale(0.98);
+}
+.wallet-main{
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.wallet-main h1{
+    font-size: 48px;
+}
+.wallet-main p{
+    font-size: 24px;
+}
+.wallet-form{
+    display: flex;
+    gap: 20px;
+}
+.wallet-inp{
+    width: 350px;
+    height: 35px;
+    font-size: 20px;
+}
+.wallet-btn{
+    width: 100px;
+    height: 35px;
+}
 /* wallet.html */

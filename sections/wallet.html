@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" type="image.png" href="/images/xamster-coin.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wallet-container">
+        <div class="wallet-header">
+            <div class="wallet-back-btn">
+                <a href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="displayer" id="upg-displayer">
+                <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                <span class="coinDisplayer" id="coinShower">0</span>
+            </div>
+        </div>
+        <div class="wallet-main">
+            <h1>You can transfer the coins into your wallet as a real currency!</h1>
+            <p>First, type the amount of coins you want to exchange and press the "Exchange" button.
+                <br>Remember you need at least 1B coins to transfer.
+            </p>
+            <p>$1 == 2B coins</p>
+            <form class="wallet-form">
+                <input type="number" class="wallet-inp">
+                <button class="wallet-btn">Exchange</button>
+            </form>
+            <p>Your current amount: $<span class="moneyShower">0</span></p>
+        </div>
+    </div>
+    <script src="wallet.js"></script>
+</body>
+
+</html>
