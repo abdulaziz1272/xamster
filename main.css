@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+button{
+    cursor: pointer;
+}
+
+/* index.html */
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #141c1f, #1a202e, #3e4aa7);
+    display: flex;
+    flex-direction: column;
+}
+.xamster-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 460px;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.imageWrapper{
+    padding: 17px;
+    border-radius: 50%;
+    background-image: linear-gradient(to top, #141c1f, #3e4aa7);
+    position: relative;
+}
+#xamsterImage {
+    cursor: pointer;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: #222a35;
+}
+#xamsterImage:hover{
+    background: #252a3f;
+}
+#bubleWrapper{
+    position: absolute;
+    z-index: 20px;
+    color: white;
+    font-size: 30px;
+    left: 300px;
+    top: 120px;
+}
+.displayer{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 50px;
+}
+.coinDisplayer{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    outline: none;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+}
+
+.section-wrapper{
+    display: flex;
+    gap: 80px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.section-wrapper a{
+    width: 120px;
+    height: 120px;
+    border: solid 5px #243154;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #2c376d;
+}
+.section-wrapper a:hover{
+    background: #3b4a91;
+}
+.section-wrapper a:active{
+    transform: scale(0.98);
+}
+.section-wrapper a span{
+    font-size: 20px;
+}
+.section-wrapper a i{
+    font-size: 50px;
+}
+
+/* index.html */
+
+
+/* upgrades.html */
+.upg-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #141c1f, #1a202e, #3e4aa7);
+    position: relative;
+}
+.upg-header{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+#upg-displayer{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.upg-header a{
+    color: white;
+}
+.upg-back-btn{
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+.upg-back-btn:hover{
+    background: #222f3f;
+}
+.upg-back-btn:active{
+    transform: scale(0.98);
+}
+.additionDisplayer{
+    font-size: 30px;
+    color: gold;
+    border: solid 2px gold;
+    padding: 5px 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #1f2a40;
+}
+.upg-lists-row{
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+}
+.upg-lists{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.upg-heading{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+.upg-lists li{
+    width: 100%;
+    border: solid white 1px;
+    display: flex;
+    height: 80px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1f2a40;
+}
+.upg-lists li p{
+    font-size: 24px;
+    color: white;
+}
+.upg-purchase-btn{
+    display: flex;
+    padding: 5px 15px;
+    align-items: center;
+    gap: 15px;
+    border-radius: 8px;
+    border: none;
+}
+.upg-purchase-btn:hover{
+    background-color: #c0c0c0;
+}
+.upg-purchase-btn:active{
+    transform: scale(0.98);
+}
+.upg-purchase-price span{
+    font-size: 24px;
+}
+.upg-purchase-price{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.upg-purchase-btn i{
+    font-size: 24px;
+}
+/* upgrades.html */
+
+
+/* investments.html */
+.invest-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #141c1f, #1a202e, #3e4aa7);
+    position: relative;
+}
+.invest-container p{
+    color: white;
+}
+.invest-header{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.invest-header a{
+    color: white;
+}
+.invest-back-btn{
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+}
+.coinDisplayer{
+    user-select: text;
+}
+.invest-back-btn:hover{
+    background: #222f3f;
+}
+.invest-back-btn:active{
+    transform: scale(0.98);
+}
+.invest-main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.invest-main h1{
+    font-size: 36px;
+    color: white;
+    text-align: center;
+}
+.invest-lists{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    padding: 0 10px;
+}
+.invest-lists li{
+    border: solid white 1px;
+    display: flex;
+    padding: 10px 20px;
+    height: 170px;
+    background: #1f2a40;
+    align-items: center;
+    justify-content: space-between;
+}
+.invest-name{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.invest-name i{
+    font-size: 60px;
+}
+.invest-rule{
+    color: white;
+    font-size: 20px;
+    display: block;
+    width: 300px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+form input{
+    height: 25px;
+    outline: none;
+    padding: 0 5px;
+}
+form button{
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 2px;
+    font-size: 20px;
+}
+form button:hover{
+    background-color: #c0c0c0;
+}
+form button:active{
+    transform: scale(0.98);
+}
+
+/* investments.html */
+
+
+/* wallet.html */
+
+/* wallet.html */

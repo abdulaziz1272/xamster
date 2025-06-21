@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrades</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" type="image.png" href="/images/xamster-coin.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="upg-container">
+        <div class="upg-header">
+            <div class="upg-back-btn">
+                <a href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="displayer" id="upg-displayer">
+                <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                <span class="coinDisplayer" id="coinShower">0</span>
+            </div>
+            <div class="additionDisplayer">0</div>
+        </div>
+
+        <h1 class="upg-heading">List of Upgrades</h1>
+
+        <ul class="upg-lists-row">
+            <ul class="upg-lists">
+                <li>
+                    <p>Upgrade the coins per tap</p>
+                    <p>+<span class="upg-additional">1</span></p>
+                    <button class="upg-purchase-btn" onclick="purchase1()">
+                        <div class="upg-purchase-price">
+                            <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                            <span class="upgCoinDecrease">20</span>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </li>
+                <li>
+                    <p>Upgrade the coins per tap</p>
+                    <p>+<span class="upg-additional">20</span></p>
+                    <button class="upg-purchase-btn" onclick="purchase20 ()">
+                        <div class="upg-purchase-price">
+                            <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                            <span class="upgCoinDecrease">500</span>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </li>
+                <li>
+                    <p>Upgrade the coins per tap</p>
+                    <p>+<span class="upg-additional">100</span></p>
+                    <button class="upg-purchase-btn" onclick="purchase100()">
+                        <div class="upg-purchase-price">
+                            <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                            <span class="upgCoinDecrease">2500</span>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </li>
+                <li>
+                    <p>Upgrade the coins per tap</p>
+                    <p>+<span class="upg-additional">500</span></p>
+                    <button class="upg-purchase-btn" onclick="purchase500 ()">
+                        <div class="upg-purchase-price">
+                            <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                            <span class="upgCoinDecrease">15000</span>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </li>
+                <li>
+                    <p>Upgrade the coins per tap</p>
+                    <p>+<span class="upg-additional">5000</span></p>
+                    <button class="upg-purchase-btn" onclick="purchase5000 ()">
+                        <div class="upg-purchase-price">
+                            <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                            <span class="upgCoinDecrease">200000</span>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </li>
+                <li>
+                    <p>Upgrade the coins per tap</p>
+                    <p>+<span class="upg-additional">40000</span></p>
+                    <button class="upg-purchase-btn" onclick="purchase40000 ()">
+                        <div class="upg-purchase-price">
+                            <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                            <span class="upgCoinDecrease">2000000</span>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </li>
+            </ul>
+            <ul class="upg-lists">
+                <li>
+                    <p>Upgrade the coins per tap</p>
+                    <p>+<span class="upg-additional">4</span></p>
+                    <button class="upg-purchase-btn" onclick="purchase4 ()">
+                        <div class="upg-purchase-price">
+                            <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                            <span class="upgCoinDecrease">90</span>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </li>
+                <li>
+                    <p>Upgrade the coins per tap</p>
+                    <p>+<span class="upg-additional">40</span></p>
+                    <button class="upg-purchase-btn" onclick="purchase40 ()">
+                        <div class="upg-purchase-price">
+                            <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                            <span class="upgCoinDecrease">900</span>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </li>
+                <li>
+                    <p>Upgrade the coins per tap</p>
+                    <p>+<span class="upg-additional">250</span></p>
+                    <button class="upg-purchase-btn" onclick="purchase250 ()">
+                        <div class="upg-purchase-price">
+                            <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                            <span class="upgCoinDecrease">6000</span>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </li>
+                <li>
+                    <p>Upgrade the coins per tap</p>
+                    <p>+<span class="upg-additional">1500</span></p>
+                    <button class="upg-purchase-btn" onclick="purchase1500 ()">
+                        <div class="upg-purchase-price">
+                            <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                            <span class="upgCoinDecrease">35000</span>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </li>
+                <li>
+                    <p>Upgrade the coins per tap</p>
+                    <p>+<span class="upg-additional">15000</span></p>
+                    <button class="upg-purchase-btn" onclick="purchase15000 ()">
+                        <div class="upg-purchase-price">
+                            <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                            <span class="upgCoinDecrease">650000</span>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </li>
+                <li>
+                    <p>Upgrade the coins per tap</p>
+                    <p>+<span class="upg-additional">100000</span></p>
+                    <button class="upg-purchase-btn" onclick="purchase100000 ()">
+                        <div class="upg-purchase-price">
+                            <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                            <span class="upgCoinDecrease">6000000</span>
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </button>
+                </li>
+            </ul>
+
+        </ul>
+    </div>
+    <script src="upgrades.js"></script>
+</body>
+
+</html>

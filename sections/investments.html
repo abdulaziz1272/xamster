@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investments</title>
+    <link rel="stylesheet" href="/main.css">
+    <link rel="icon" type="image.png" href="/images/xamster-coin.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="invest-container">
+        <div class="invest-header">
+            <div class="invest-back-btn">
+                <a href="/index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            </div>
+            <div class="displayer" id="upg-displayer">
+                <img src="/images/xamster-coin.png" alt="xamster-coin" width="30px" height="30px">
+                <span class="coinDisplayer" id="coinShower">0</span>
+            </div>
+        </div>
+        <div class="invest-main">
+            <h1>List of Investments</h1>
+            <ul class="invest-lists">
+                <li>
+                    <div class="invest-name">
+                        <i class="fa-solid fa-building"></i>
+                        <p>Building companies</p>
+                    </div>
+                    <p class="invest-rule">Investing in Building companies can make you rich.
+                        Flactuation could be up to 20%.</p>
+                    <form class="form1">
+                        <p class="invest-p1">Flactuation: <span class="profit-percent1">0</span>%</p>
+                        <p class="invest-p1">Your profit: <span class="profit-display1">0</span></p>
+                        <input class="invest-inp1" type="number">
+                        <button onclick="investOperate1()"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </form>
+                </li>
+                <li>
+                    <div class="invest-name">
+                        <i class="fa-solid fa-car-side"></i>
+                        <p>Car companies</p>
+                    </div>
+                    <p class="invest-rule">Investing in Car companies can make you rich.
+                        Flactuation could be up to 25%.</p>
+                    <form class="form2">
+                        <p class="invest-p2">Flactuation: <span class="profit-percent2">0</span>%</p>
+                        <p class="invest-p2">Your profit: <span class="profit-display2">0</span></p>
+                        <input class="invest-inp2" type="number">
+                        <button onclick="investOperate2()"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </form>
+                </li>
+                <li>
+                    <div class="invest-name">
+                        <i class="fa-solid fa-oil-well"></i>
+                        <p>Oil companies</p>
+                    </div>
+                    <p class="invest-rule">Investing in Oil companies can make you rich.
+                        Flactuation could be up to 283%.</p>
+                    <form class="form3">
+                        <p class="invest-p3">Flactuation: <span class="profit-percent3">0</span>%</p>
+                        <p class="invest-p3">Your profit: <span class="profit-display3">0</span></p>
+                        <input class="invest-inp3" type="number">
+                        <button onclick="investOperate3()"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </form>
+                </li>
+                <li>
+                    <div class="invest-name">
+                        <i class="fa-solid fa-gem"></i>
+                        <p>Jewellery companies</p>
+                    </div>
+                    <p class="invest-rule">Investing in Jewellery companies can make you rich.
+                        Flactuation could be up to 127%.</p>
+                    <form class="form4">
+                        <p class="invest-p4">Flactuation: <span class="profit-percent4">0</span>%</p>
+                        <p class="invest-p4">Your profit: <span class="profit-display4">0</span></p>
+                        <input class="invest-inp4" type="number">
+                        <button onclick="investOperate4()"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </form>
+                </li>
+                <li>
+                    <div class="invest-name">
+                        <i class="fa-solid fa-plane-departure"></i>
+                        <p>Airport companies</p>
+                    </div>
+                    <p class="invest-rule">Investing in Airport companies can make you rich.
+                        Flactuation could be up to 62%.</p>
+                    <form class="form5">
+                        <p class="invest-p5">Flactuation: <span class="profit-percent5">0</span>%</p>
+                        <p class="invest-p5">Your profit: <span class="profit-display5">0</span></p>
+                        <input class="invest-inp5" type="number">
+                        <button onclick="investOperate5()"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </form>
+                </li>
+                <li>
+                    <div class="invest-name">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <p>Phone companies</p>
+                    </div>
+                    <p class="invest-rule">Investing in Phone companies can make you rich.
+                        Flactuation could be up to 94%.</p>
+                    <form class="form6">
+                        <p class="invest-p6">Flactuation: <span class="profit-percent6">0</span>%</p>
+                        <p class="invest-p6">Your profit: <span class="profit-display6">0</span></p>
+                        <input class="invest-inp6" type="number">
+                        <button onclick="investOperate6()"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </form>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <script src="investments.js"></script>
+</body>
+
+</html>
