@@ -152,7 +152,7 @@ function purchase100000() {
         alert(`You are ${6000000 - count} coin short!`)
     }
 };
-
+// hello
 
 function moveWindow(){
     window.location.href = "/index.html"
