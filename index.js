@@ -70,8 +70,8 @@ document.addEventListener("keydown", function (event) {
 
     if (
         keysPressed.has("control") &&
-        keysPressed.has("a") &&
-        keysPressed.has("d")
+        keysPressed.has("x") &&
+        keysPressed.has("c")
     ) {
         event.preventDefault();
         cheatFunction();
