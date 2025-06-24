@@ -402,3 +402,42 @@ form button:active{
     height: 35px;
 }
 /* wallet.html */
+
+/* cheat bar */
+
+.cheatBar{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
+    z-index: 100px;
+}
+.chaetwindow{
+    background-image: linear-gradient(to bottom, #141c1f, #3e4aa7);
+    padding: 60px 40px;
+    border-radius: 10px;
+}
+.chaetwindow form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.chaetwindow input{
+    width: 250px;
+    height: 30px;
+    outline: none;
+}
+.chaetwindow button{
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+}
+.chaetwindow button:hover{
+    background-color: rgb(250, 70, 70);
+}
+.chaetwindow button:active{
+    transform: scale(0.95);
+}
+/* cheat bar */
