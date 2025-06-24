@@ -5,6 +5,12 @@ const cheatBar = document.querySelector(".cheatBar");
 let cheatWindow; // Keep track of the window outside the function
 let cheatVisible = false; // Tracks open/close state
 
+let count = Number(localStorage.getItem("coinCount")) || Number(coinCount.textContent);
+
+
+
+let dollar = Number(localStorage.getItem("dollarAmount"));
+
 function cheatFunction() {
     if (!cheatVisible) {
         // Create the window
@@ -12,7 +18,7 @@ function cheatFunction() {
         cheatWindow.classList.add("chaetwindow");
 
         cheatWindow.innerHTML = `
-            <form>
+            <form class="cheatForm">
                 <input type="number" id="cheatCoin" placeholder="Overall coins">
                 <input type="number" id="cheatTap" placeholder="Coins per tap">
                 <input type="number" id="cheatMoney" placeholder="Money">
@@ -23,10 +29,32 @@ function cheatFunction() {
         cheatBar.appendChild(cheatWindow); // or cheatBar.appendChild
         cheatVisible = true;
 
+        const cheatCoinSet = document.querySelector("#cheatCoin");
+        const cheatTapSet = document.querySelector("#cheatTap");
+        const cheatMoneySet = document.querySelector("#cheatMoney");
         // Close button
         document.getElementById("cheatBtn").addEventListener("click", () => {
+            if(cheatCoinSet.value == -1){
+                count = 0;
+            }else{
+                count = Number(cheatCoinSet.value) || Number(localStorage.getItem("coinCount"));
+            }
+            console.log(count);
+            
+            coinCount.textContent = count;
+            localStorage.setItem("coinCount", count);
             cheatWindow.remove();
             cheatVisible = false;
+
+            addition = Number(cheatTapSet.value) || Number(localStorage.getItem("addition"));
+            localStorage.setItem("addition", addition);
+
+            if(cheatMoneySet.value == -1){
+                dollar = 0;
+            }else{
+                dollar = Number(cheatMoneySet.value) || Number(localStorage.getItem("dollarAmount"));
+            }
+            localStorage.setItem("dollarAmount", dollar)
         });
 
     } else {
@@ -38,7 +66,6 @@ function cheatFunction() {
 
 const keysPressed = new Set();
 document.addEventListener("keydown", function (event) {
-    event.preventDefault()
     keysPressed.add(event.key.toLowerCase());
 
     if (
@@ -58,9 +85,7 @@ document.addEventListener("keyup", function (event) {
 const bubleWrapper = document.getElementById("bubleWrapper");
 let addition = localStorage.getItem("addition") || 1;
 localStorage.setItem("addition", addition);
-console.log(localStorage.getItem("addition"));
 
-let count = Number(localStorage.getItem("coinCount")) || Number(coinCount.textContent);
 coinCount.textContent = count;
 
 
@@ -69,8 +94,7 @@ coinCount.textContent = count;
 
 function increaseNumber() {
 
-    console.log(localStorage.getItem("addition"));
-    
+
     count += Number(addition);
     coinCount.textContent = count;
 
