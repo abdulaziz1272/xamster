@@ -141,6 +141,9 @@ document.addEventListener("keydown", function (event) {
         increaseNumber();
     }
 });
+setInterval(() =>{
+    increaseNumber();
+},1000);
 
 function transformToUpg() {
     window.location.href = "./sections/ungrades.html"
